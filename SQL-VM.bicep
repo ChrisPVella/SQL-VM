@@ -32,7 +32,6 @@ param imageOffer string
   'SQLDEV-gen2'
   'web-gen2'
   'enterprisedbengineonly-gen2'
-  'Standard_D2s_v3'
 ])
 param sqlSku string 
 
