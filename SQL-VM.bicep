@@ -59,6 +59,7 @@ param sqlDataDisksCount int
 param dataPath string 
 
 @description('Amount of data disks (1TB each) for SQL Log files')
+@minValue(1)
 @maxValue(8)
 param sqlLogDisksCount int
 
