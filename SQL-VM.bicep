@@ -7,7 +7,7 @@ param virtualMachineSize string
 @description('Specify the name of an existing VNet in the same resource group')
 param existingVirtualNetworkName string
 
-@description('Specify the resrouce group of the existing VNet')
+@description('Specify the resource group of the existing VNet')
 param existingVnetResourceGroup string
 
 @description('Specify the name of the Subnet Name')
@@ -32,6 +32,7 @@ param imageOffer string
   'SQLDEV-gen2'
   'web-gen2'
   'enterprisedbengineonly-gen2'
+  'standard'
 ])
 param sqlSku string 
 
@@ -59,7 +60,6 @@ param sqlDataDisksCount int
 param dataPath string 
 
 @description('Amount of data disks (1TB each) for SQL Log files')
-@minValue(1)
 @maxValue(8)
 param sqlLogDisksCount int
 
